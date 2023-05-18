@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="회원가입.css">
+</head>
+<body>
+    <form action="memberProc1.jsp" method="post" name="regFrm">
+    <section class="signUp">
+        <h2>회원가입</h2>
+        <ul>
+            <li>
+                <input type="text" placeholder="아이디 입력" name="id" style="box-sizing: border-box; width: 250px;">
+                <button>아이디 중복</button>
+                <div>ajax 중복 확인 / 불가능</div>
+            </li>
+            <li><input type="password" placeholder="비밀번호 입력" name="idc"></li>
+            <li><input type="password" placeholder="비밀번호 재입력" name="id"></li>
+            <li><input type="text" placeholder="이름"></li>
+                <input type="checkbox" style="width: 20px;">남자
+                <input type="checkbox"style="width: 20px;">여자
+            <li><input type="text" placeholder="생년월일"></li>
+            <li><input type="email" placeholder="이메일주소"></li>
+            <li>
+                <input type="text" placeholder="우편번호" readonly style="box-sizing: border-box; width: 150px;">
+                <input type="button" value="우편번호검색" onclick="findAddr();" style="box-sizing: border-box; width: 100px;">
+            </li>
+            <li><input type="text" placeholder="주소"></li>
+            <li><input type="text" placeholder="상세주소" style="box-sizing: border-box; width: 300px;"></li>
+            <li><button>회원가입</button><button>다시작성</button><button>로그인</button></li>
+        </ul>
+    </section>
+</form>
+
+    <!-- <section class="login">
+        <h2>로그인</h2>
+        <ul>
+            <li><input type="text" placeholder="아이디" title="아이디입력"></li>
+            <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
+            <li><input type="checkbox" id="chk_id"><label for="chk_id">아이디저장</label></li>
+            <li><button>로그인</button></li>
+        </ul>
+        <div style="border: 1px solid;">
+            <table>
+                <tr>
+                    <td><a href="회원가입구현.html" target="_blank">회원가입</a></td>
+                    <td><a href="">아이디 찾기</a></td>
+                    <td><a href="">비밀번호 찾기</a></td>
+                </tr>
+            </table>
+    </section> -->
+</body>
+</html>
